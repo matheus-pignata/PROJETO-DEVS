@@ -24,15 +24,16 @@
     --switch--bg-url: url(./assets/sun.svg);
 }
 
-body {
-    /*
+body {   
+background: var(--bg-url) no-repeat top center/cover ;  
+height: 100vh;
+/*
     background-image: url(./assets/bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     */
 /*background: color image repeat position/size */
-background: var(--bg-url) no-repeat top center/cover ; 
 }
 
 body * { 
@@ -181,5 +182,15 @@ footer {
     font-size: 14px;
 }
 
+/*media queries*/
 
+@media (min-widht: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+}
 
